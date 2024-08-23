@@ -131,6 +131,20 @@ public final class BlockTagGenerator extends FabricTagProvider.BlockTagProvider 
 		getOrCreateTagBuilder(ConventionalBlockTags.CHAINS)
 				.add(Blocks.CHAIN);
 
+		getOrCreateTagBuilder(ConventionalBlockTags.TORCHES_WALL)
+				.add(Blocks.WALL_TORCH)
+				.add(Blocks.REDSTONE_WALL_TORCH)
+				.add(Blocks.SOUL_WALL_TORCH);
+
+		getOrCreateTagBuilder(ConventionalBlockTags.TORCHES_GROUND)
+				.add(Blocks.TORCH)
+				.add(Blocks.REDSTONE_TORCH)
+				.add(Blocks.SOUL_TORCH);
+
+		getOrCreateTagBuilder(ConventionalBlockTags.TORCHES)
+				.addOptionalTag(ConventionalBlockTags.TORCHES_WALL)
+				.addOptionalTag(ConventionalBlockTags.TORCHES_GROUND);
+
 		getOrCreateTagBuilder(ConventionalBlockTags.HIDDEN_FROM_RECIPE_VIEWERS); // Generate tag so others can see it exists through JSON.
 	}
 

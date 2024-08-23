@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "#c:torches/ground",
+      "required": false
+    },
+    {
+      "id": "#c:torches/wall",
+      "required": false
+    }
+  ]
+}

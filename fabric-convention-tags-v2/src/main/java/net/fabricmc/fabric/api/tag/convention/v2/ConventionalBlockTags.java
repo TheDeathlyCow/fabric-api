@@ -153,6 +153,10 @@ public final class ConventionalBlockTags {
 	public static final TagKey<Block> ROPES = register("ropes");
 	public static final TagKey<Block> CHAINS = register("chains");
 
+	public static final TagKey<Block> TORCHES_GROUND = register("torches/wall");
+	public static final TagKey<Block> TORCHES_WALL = register("torches/ground");
+	public static final TagKey<Block> TORCHES = register("torches");
+
 	/**
 	 * Tag that holds all blocks that recipe viewers should not show to users.
 	 * Recipe viewers may use this to automatically find the corresponding BlockItem to hide.
