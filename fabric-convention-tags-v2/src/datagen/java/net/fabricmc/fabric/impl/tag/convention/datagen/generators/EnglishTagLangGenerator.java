@@ -112,6 +112,9 @@ public class EnglishTagLangGenerator extends FabricLanguageProvider {
 		translationBuilder.add(ConventionalBlockTags.SKULLS, "Skulls");
 		translationBuilder.add(ConventionalBlockTags.ROPES, "Ropes");
 		translationBuilder.add(ConventionalBlockTags.CHAINS, "Chains");
+		translationBuilder.add(ConventionalBlockTags.TORCHES_WALL, "Wall Torches");
+		translationBuilder.add(ConventionalBlockTags.TORCHES_GROUND, "Ground Torches");
+		translationBuilder.add(ConventionalBlockTags.TORCHES, "Torches");
 		translationBuilder.add(ConventionalBlockTags.HIDDEN_FROM_RECIPE_VIEWERS, "Hidden From Recipe Viewers");
 
 		// Items
@@ -316,6 +319,7 @@ public class EnglishTagLangGenerator extends FabricLanguageProvider {
 		translationBuilder.add(ConventionalItemTags.ENDER_PEARLS, "Ender Pearls");
 		translationBuilder.add(ConventionalItemTags.SLIME_BALLS, "Slimeballs");
 		translationBuilder.add(ConventionalItemTags.FERTILIZERS, "Fertilizers");
+		translationBuilder.add(ConventionalItemTags.TORCHES, "Torches");
 		translationBuilder.add(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS, "Hidden From Recipe Viewers");
 
 		// Enchantments
