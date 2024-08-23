@@ -733,6 +733,11 @@ public final class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 		getOrCreateTagBuilder(ConventionalItemTags.FERTILIZERS)
 				.add(Items.BONE_MEAL);
 
+		getOrCreateTagBuilder(ConventionalItemTags.TORCHES)
+				.add(Items.TORCH)
+				.add(Items.SOUL_TORCH)
+				.add(Items.REDSTONE_TORCH);
+
 		getOrCreateTagBuilder(ConventionalItemTags.HIDDEN_FROM_RECIPE_VIEWERS); // Generate tag so others can see it exists through JSON.
 	}
 
