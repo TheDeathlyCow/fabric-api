@@ -402,6 +402,14 @@ public final class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
 		getOrCreateTagBuilder(ConventionalItemTags.JUICE_DRINKS);
 
+		getOrCreateTagBuilder(ConventionalItemTags.DRINK_CONTAINING_BUCKET)
+				.add(Items.MILK_BUCKET);
+
+		getOrCreateTagBuilder(ConventionalItemTags.DRINK_CONTAINING_BOTTLE)
+				.add(Items.POTION)
+				.add(Items.HONEY_BOTTLE)
+				.add(Items.OMINOUS_BOTTLE);
+
 		// Deprecated tags below
 		getOrCreateTagBuilder(ConventionalItemTags.FRUITS_FOODS)
 				.add(Items.APPLE)

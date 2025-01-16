@@ -282,6 +282,16 @@ public final class ConventionalItemTags {
 	 */
 	public static final TagKey<Item> JUICE_DRINKS = register("drinks/juice");
 
+	// Drink containing items
+	/**
+	 * For non-empty buckets that are {@linkplain #DRINKS drinkable}.
+	 */
+	public static final TagKey<Item> DRINK_CONTAINING_BUCKET = register("drink_containing/bucket");
+	/**
+	 * For non-empty bottles that are {@linkplain #DRINKS drinkable}.
+	 */
+	public static final TagKey<Item> DRINK_CONTAINING_BOTTLE = register("drink_containing/bottle");
+
 	// Buckets
 	public static final TagKey<Item> BUCKETS = register("buckets");
 	public static final TagKey<Item> EMPTY_BUCKETS = register("buckets/empty");
