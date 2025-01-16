@@ -256,7 +256,7 @@ public final class ConventionalItemTags {
 	 * {@code #c:drinks/coffee}, {@code #c:drinks/tea}, and {@code #c:drinks/alcohol}.
 	 *
 	 * <p>Specific types of drinks, such as Lattes, Green Tea, and Beer should go in sub-sub-tags using their regular name,
-	 * such as {@code #c:drinks/coffee/latte}, {@code #c:drinks/tea/green_tea}, and {@code #c:drinks/coffee/beer}.
+	 * such as {@code #c:drinks/coffee/latte}, {@code #c:drinks/tea/green_tea}, and {@code #c:drinks/alcohol/beer}.
 	 */
 	public static final TagKey<Item> DRINKS = register("drinks");
 	/**
