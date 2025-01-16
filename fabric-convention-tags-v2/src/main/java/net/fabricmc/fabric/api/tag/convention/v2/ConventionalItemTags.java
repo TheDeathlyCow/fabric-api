@@ -249,7 +249,7 @@ public final class ConventionalItemTags {
 	// Drinks
 	/**
 	 * Drinks are consumable items with use the {@linkplain net.minecraft.item.consume.UseAction#DRINK drink use action},
-	 * can be consumed regardless of hunger, and do not (generally) have a
+	 * can be consumed regardless the player's current hunger, and do not (generally) have a
 	 * {@linkplain net.minecraft.component.type.FoodComponent food component}.
 	 *
 	 * <p>Categories of drinks, such as Coffee, Tea, or Alcoholic drinks should be placed in a sub-tag, such as
