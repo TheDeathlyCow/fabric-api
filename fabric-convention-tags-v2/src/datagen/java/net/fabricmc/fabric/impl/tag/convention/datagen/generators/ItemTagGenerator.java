@@ -376,6 +376,32 @@ public final class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 				.addOptionalTag(ConventionalItemTags.EDIBLE_WHEN_PLACED_FOODS)
 				.addOptionalTag(ConventionalItemTags.FOOD_POISONING_FOODS);
 
+		getOrCreateTagBuilder(ConventionalItemTags.DRINKS)
+				.addOptionalTag(ConventionalItemTags.WATER_DRINKS)
+				.addOptionalTag(ConventionalItemTags.MILK_DRINKS)
+				.addOptionalTag(ConventionalItemTags.HONEY_DRINKS)
+				.addOptionalTag(ConventionalItemTags.MAGIC_DRINKS)
+				.addOptionalTag(ConventionalItemTags.OMINOUS_MAGIC_DRINKS)
+				.addOptionalTag(ConventionalItemTags.JUICE_DRINKS);
+
+		getOrCreateTagBuilder(ConventionalItemTags.WATER_DRINKS)
+				.add(Items.POTION);
+
+		getOrCreateTagBuilder(ConventionalItemTags.MILK_DRINKS)
+				.add(Items.MILK_BUCKET);
+
+		getOrCreateTagBuilder(ConventionalItemTags.HONEY_DRINKS)
+				.add(Items.HONEY_BOTTLE);
+
+		getOrCreateTagBuilder(ConventionalItemTags.MAGIC_DRINKS)
+				.add(Items.POTION)
+				.addOptionalTag(ConventionalItemTags.OMINOUS_MAGIC_DRINKS);
+
+		getOrCreateTagBuilder(ConventionalItemTags.OMINOUS_MAGIC_DRINKS)
+				.add(Items.OMINOUS_BOTTLE);
+
+		getOrCreateTagBuilder(ConventionalItemTags.JUICE_DRINKS);
+
 		// Deprecated tags below
 		getOrCreateTagBuilder(ConventionalItemTags.FRUITS_FOODS)
 				.add(Items.APPLE)

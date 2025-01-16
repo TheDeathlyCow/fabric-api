@@ -250,7 +250,7 @@ public final class ConventionalItemTags {
 	/**
 	 * Drinks are consumable items with use the {@linkplain net.minecraft.item.consume.UseAction#DRINK drink use action},
 	 * can be consumed regardless of hunger, and do not (generally) have a
-	 * {@linkplain net.minecraft.component.DataComponentTypes#FOOD food component}.
+	 * {@linkplain net.minecraft.component.type.FoodComponent food component}.
 	 * <p>Categories of drinks, such as Coffee, Tea, or Alcoholic drinks should be placed in a sub-tag, such as
 	 * {@code #c:drinks/coffee}, {@code #c:drinks/tea}, {@code #c:drinks/alcohol}.
 	 * <p>Specific types of drinks, such as Lattes, Green Tea, and Beer should go in sub-sub-tags using their regular name,
@@ -264,7 +264,7 @@ public final class ConventionalItemTags {
 	public static final TagKey<Item> MILK_DRINKS = register("drinks/milk");
 	public static final TagKey<Item> HONEY_DRINKS = register("drinks/honey");
 	/**
-	 * For consumable drinks that are magic in nature and always grant at least one
+	 * For consumable drinks that are magic in nature and usually grant at least one
 	 * {@link net.minecraft.entity.effect.StatusEffect} when consumed.
 	 */
 	public static final TagKey<Item> MAGIC_DRINKS = register("drinks/magic");
