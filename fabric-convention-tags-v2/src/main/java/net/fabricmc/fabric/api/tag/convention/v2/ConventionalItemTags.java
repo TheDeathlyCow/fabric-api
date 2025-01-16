@@ -276,11 +276,12 @@ public final class ConventionalItemTags {
 	public static final TagKey<Item> OMINOUS_MAGIC_DRINKS = register("drinks/magic/ominous");
 	/**
 	 * Plant based fruit and vegetable juices belong in this tag, for example apple juice and carrot juice.
-	 *
-	 * <p>If specific types of juice tags are desired, they should be placed in a sub-sub-tag (for example
-	 * {@code #c:drinks/juice/apple} for apple juice).
 	 */
 	public static final TagKey<Item> JUICE_DRINKS = register("drinks/juice");
+	public static final TagKey<Item> APPLE_JUICE_DRINKS = register("drinks/juice/apple");
+	public static final TagKey<Item> BEET_JUICE_DRINKS = register("drinks/juice/beet");
+	public static final TagKey<Item> CARROT_JUICE_DRINKS = register("drinks/juice/carrot");
+	public static final TagKey<Item> WATERMELON_JUICE_DRINKS = register("drinks/juice/watermelon");
 
 	// Drink containing items
 	/**

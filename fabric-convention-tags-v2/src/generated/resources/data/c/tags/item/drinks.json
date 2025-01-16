@@ -23,6 +23,22 @@
     {
       "id": "#c:drinks/juice",
       "required": false
+    },
+    {
+      "id": "#c:drinks/juice/apple",
+      "required": false
+    },
+    {
+      "id": "#c:drinks/juice/beet",
+      "required": false
+    },
+    {
+      "id": "#c:drinks/juice/carrot",
+      "required": false
+    },
+    {
+      "id": "#c:drinks/juice/watermelon",
+      "required": false
     }
   ]
 }
