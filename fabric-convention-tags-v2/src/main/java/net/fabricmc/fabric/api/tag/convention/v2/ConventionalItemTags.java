@@ -253,10 +253,10 @@ public final class ConventionalItemTags {
 	 * {@linkplain net.minecraft.component.type.FoodComponent food component}.
 	 *
 	 * <p>Categories of drinks, such as Coffee, Tea, or Alcoholic drinks should be placed in a sub-tag, such as
-	 * {@code #c:drinks/coffee}, {@code #c:drinks/tea}, {@code #c:drinks/alcohol}.
+	 * {@code #c:drinks/coffee}, {@code #c:drinks/tea}, and {@code #c:drinks/alcohol}.
 	 *
 	 * <p>Specific types of drinks, such as Lattes, Green Tea, and Beer should go in sub-sub-tags using their regular name,
-	 * such as {@code #c:drinks/coffee/latte}, {@code #c:drinks/tea/green_tea}, {@code #c:drinks/coffee/beer},
+	 * such as {@code #c:drinks/coffee/latte}, {@code #c:drinks/tea/green_tea}, and {@code #c:drinks/coffee/beer}.
 	 */
 	public static final TagKey<Item> DRINKS = register("drinks");
 	/**
