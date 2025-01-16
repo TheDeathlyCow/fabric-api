@@ -246,6 +246,39 @@ public final class ConventionalItemTags {
 	 */
 	public static final TagKey<Item> FOOD_POISONING_FOODS = register("foods/food_poisoning");
 
+	// Drinks
+	/**
+	 * Drinks are consumable items with use the {@linkplain net.minecraft.item.consume.UseAction#DRINK drink use action},
+	 * can be consumed regardless of hunger, and do not (generally) have a
+	 * {@linkplain net.minecraft.component.DataComponentTypes#FOOD food component}.
+	 * <p>Categories of drinks, such as Coffee, Tea, or Alcoholic drinks should be placed in a sub-tag, such as
+	 * {@code #c:drinks/coffee}, {@code #c:drinks/tea}, {@code #c:drinks/alcohol}.
+	 * <p>Specific types of drinks, such as Lattes, Green Tea, and Beer should go in sub-sub-tags using their regular name,
+	 * such as {@code #c:drinks/coffee/latte}, {@code #c:drinks/tea/green_tea}, {@code #c:drinks/coffee/beer},
+	 */
+	public static final TagKey<Item> DRINKS = register("drinks");
+	/**
+	 * For consumable drinks that are water, or water based (such as potions).
+	 */
+	public static final TagKey<Item> WATER_DRINKS = register("drinks/water");
+	public static final TagKey<Item> MILK_DRINKS = register("drinks/milk");
+	public static final TagKey<Item> HONEY_DRINKS = register("drinks/honey");
+	/**
+	 * For consumable drinks that are magic in nature and always grant at least one
+	 * {@link net.minecraft.entity.effect.StatusEffect} when consumed.
+	 */
+	public static final TagKey<Item> MAGIC_DRINKS = register("drinks/magic");
+	/**
+	 * For drinks that always grant the {@linkplain net.minecraft.entity.effect.StatusEffects#BAD_OMEN Bad Omen} effect.
+	 */
+	public static final TagKey<Item> OMINOUS_MAGIC_DRINKS = register("drinks/magic/ominous");
+	/**
+	 * Plant based fruit and vegetable juices belong in this tag, for example apple juice and carrot juice.
+	 * <p>If specific types of juice tags are desired, they should be placed in a subtag (for example
+	 * {@code #c:drinks/juice/apple} for apple juice).
+	 */
+	public static final TagKey<Item> JUICE_DRINKS = register("drinks/juice");
+
 	// Buckets
 	public static final TagKey<Item> BUCKETS = register("buckets");
 	public static final TagKey<Item> EMPTY_BUCKETS = register("buckets/empty");
