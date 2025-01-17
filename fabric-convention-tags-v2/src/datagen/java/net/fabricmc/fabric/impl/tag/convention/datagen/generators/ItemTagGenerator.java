@@ -378,6 +378,7 @@ public final class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
 		getOrCreateTagBuilder(ConventionalItemTags.DRINKS)
 				.addOptionalTag(ConventionalItemTags.WATER_DRINKS)
+				.addOptionalTag(ConventionalItemTags.WATERY_DRINKS)
 				.addOptionalTag(ConventionalItemTags.MILK_DRINKS)
 				.addOptionalTag(ConventionalItemTags.HONEY_DRINKS)
 				.addOptionalTag(ConventionalItemTags.MAGIC_DRINKS)
@@ -388,8 +389,11 @@ public final class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 				.addOptionalTag(ConventionalItemTags.CARROT_JUICE_DRINKS)
 				.addOptionalTag(ConventionalItemTags.WATERMELON_JUICE_DRINKS);
 
-		getOrCreateTagBuilder(ConventionalItemTags.WATER_DRINKS)
-				.add(Items.POTION);
+		getOrCreateTagBuilder(ConventionalItemTags.WATER_DRINKS);
+
+		getOrCreateTagBuilder(ConventionalItemTags.WATERY_DRINKS)
+				.add(Items.POTION)
+				.addOptionalTag(ConventionalItemTags.WATER_DRINKS);
 
 		getOrCreateTagBuilder(ConventionalItemTags.MILK_DRINKS)
 				.add(Items.MILK_BUCKET);

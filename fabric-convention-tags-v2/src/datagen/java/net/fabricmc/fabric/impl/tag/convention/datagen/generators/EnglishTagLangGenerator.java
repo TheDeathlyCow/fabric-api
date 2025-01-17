@@ -280,6 +280,7 @@ public class EnglishTagLangGenerator extends FabricLanguageProvider {
 		translationBuilder.add(ConventionalItemTags.CANDIES_FOODS, "Candies");
 		translationBuilder.add(ConventionalItemTags.DRINKS, "Drinks");
 		translationBuilder.add(ConventionalItemTags.WATER_DRINKS, "Water");
+		translationBuilder.add(ConventionalItemTags.WATERY_DRINKS, "Watery Drinks");
 		translationBuilder.add(ConventionalItemTags.MILK_DRINKS, "Milk");
 		translationBuilder.add(ConventionalItemTags.HONEY_DRINKS, "Honey");
 		translationBuilder.add(ConventionalItemTags.MAGIC_DRINKS, "Magical Drinks");
