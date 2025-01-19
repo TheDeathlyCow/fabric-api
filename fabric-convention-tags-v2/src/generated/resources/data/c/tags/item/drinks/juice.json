@@ -5,7 +5,7 @@
       "required": false
     },
     {
-      "id": "#c:drinks/juice/beet",
+      "id": "#c:drinks/juice/beetroot",
       "required": false
     },
     {
@@ -13,7 +13,7 @@
       "required": false
     },
     {
-      "id": "#c:drinks/juice/watermelon",
+      "id": "#c:drinks/juice/melon",
       "required": false
     }
   ]

@@ -285,9 +285,9 @@ public final class ConventionalItemTags {
 	 */
 	public static final TagKey<Item> JUICE_DRINKS = register("drinks/juice");
 	public static final TagKey<Item> APPLE_JUICE_DRINKS = register("drinks/juice/apple");
-	public static final TagKey<Item> BEET_JUICE_DRINKS = register("drinks/juice/beet");
+	public static final TagKey<Item> BEETROOT_JUICE_DRINKS = register("drinks/juice/beetroot");
 	public static final TagKey<Item> CARROT_JUICE_DRINKS = register("drinks/juice/carrot");
-	public static final TagKey<Item> WATERMELON_JUICE_DRINKS = register("drinks/juice/watermelon");
+	public static final TagKey<Item> MELON_JUICE_DRINKS = register("drinks/juice/melon");
 
 	// Drink containing items
 	/**
