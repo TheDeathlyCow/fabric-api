@@ -51,6 +51,11 @@ public final class TestScreenshotComparisonOptionsImpl extends TestScreenshotCom
 	}
 
 	@Override
+	public TestScreenshotComparisonOptions save() {
+		return saveWithFileName(getTemplateImagePath());
+	}
+
+	@Override
 	public TestScreenshotComparisonOptions saveWithFileName(String fileName) {
 		Preconditions.checkNotNull(fileName, "fileName");
 
