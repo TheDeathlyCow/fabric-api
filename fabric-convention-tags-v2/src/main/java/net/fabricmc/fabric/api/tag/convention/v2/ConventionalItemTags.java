@@ -70,6 +70,7 @@ public final class ConventionalItemTags {
 	 */
 	public static final TagKey<Item> IGNITER_TOOLS = register("tools/igniter");
 	public static final TagKey<Item> MACE_TOOLS = register("tools/mace");
+	public static final TagKey<Item> WRENCH_TOOLS = register("tools/wrench");
 
 	// Action-based tool tags
 	/**
@@ -500,6 +501,7 @@ public final class ConventionalItemTags {
 	public static final TagKey<Item> MELON_SEEDS = register("seeds/melon");
 	public static final TagKey<Item> PUMPKIN_SEEDS = register("seeds/pumpkin");
 	public static final TagKey<Item> TORCHFLOWER_SEEDS = register("seeds/torchflower");
+	public static final TagKey<Item> PITCHER_PLANT_SEEDS = register("seeds/pitcher_plant");
 	public static final TagKey<Item> WHEAT_SEEDS = register("seeds/wheat");
 
 	// Other

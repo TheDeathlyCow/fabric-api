@@ -180,6 +180,7 @@ public class EnglishTagLangGenerator extends FabricLanguageProvider {
 		translationBuilder.add(ConventionalItemTags.BRUSH_TOOLS, "Brushes");
 		translationBuilder.add(ConventionalItemTags.IGNITER_TOOLS, "Igniters");
 		translationBuilder.add(ConventionalItemTags.MACE_TOOLS, "Maces");
+		translationBuilder.add(ConventionalItemTags.WRENCH_TOOLS, "Wrenches");
 		translationBuilder.add(ConventionalItemTags.MELEE_WEAPON_TOOLS, "Melee Weapons");
 		translationBuilder.add(ConventionalItemTags.RANGED_WEAPON_TOOLS, "Ranged Weapons");
 		translationBuilder.add(ConventionalItemTags.MINING_TOOL_TOOLS, "Mining Tools");
@@ -413,6 +414,7 @@ public class EnglishTagLangGenerator extends FabricLanguageProvider {
 		translationBuilder.add(ConventionalItemTags.MELON_SEEDS, "Melon Seeds");
 		translationBuilder.add(ConventionalItemTags.PUMPKIN_SEEDS, "Pumpkin Seeds");
 		translationBuilder.add(ConventionalItemTags.TORCHFLOWER_SEEDS, "Torchflower Seeds");
+		translationBuilder.add(ConventionalItemTags.PITCHER_PLANT_SEEDS, "Pitcher Plant Seeds");
 		translationBuilder.add(ConventionalItemTags.WHEAT_SEEDS, "Wheat Seeds");
 		translationBuilder.add(ConventionalItemTags.PLAYER_WORKSTATIONS_CRAFTING_TABLES, "Crafting Tables");
 		translationBuilder.add(ConventionalItemTags.PLAYER_WORKSTATIONS_FURNACES, "Furnaces");
