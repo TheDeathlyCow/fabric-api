@@ -20,6 +20,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
+import org.lwjgl.glfw.GLFW;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -68,15 +69,15 @@ public abstract class CreativeInventoryScreenMixin extends HandledScreen<Creativ
 		}
 	}
 
-	@Inject(method = "init", at = @At("RETURN"))
+	@Inject(method = "init", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/widget/TextFieldWidget;setEditableColor(I)V", shift = At.Shift.AFTER))
 	private void init(CallbackInfo info) {
 		currentPage = getPage(selectedTab);
 
-		int xpos = x + 170;
+		int xpos = x + 171;
 		int ypos = y + 4;
 
 		CreativeInventoryScreen self = (CreativeInventoryScreen) (Object) this;
-		addDrawableChild(new FabricCreativeGuiComponents.ItemGroupButtonWidget(xpos + 11, ypos, FabricCreativeGuiComponents.Type.NEXT, self));
+		addDrawableChild(new FabricCreativeGuiComponents.ItemGroupButtonWidget(xpos + 10, ypos, FabricCreativeGuiComponents.Type.NEXT, self));
 		addDrawableChild(new FabricCreativeGuiComponents.ItemGroupButtonWidget(xpos, ypos, FabricCreativeGuiComponents.Type.PREVIOUS, self));
 	}
 
@@ -105,6 +106,19 @@ public abstract class CreativeInventoryScreenMixin extends HandledScreen<Creativ
 	private void renderTabIcon(DrawContext drawContext, ItemGroup itemGroup, CallbackInfo info) {
 		if (!isGroupVisible(itemGroup)) {
 			info.cancel();
+		}
+	}
+
+	@Inject(method = "keyPressed", at = @At("HEAD"), cancellable = true)
+	private void keyPressed(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
+		if (keyCode == GLFW.GLFW_KEY_PAGE_UP) {
+			if (switchToPreviousPage()) {
+				cir.setReturnValue(true);
+			}
+		} else if (keyCode == GLFW.GLFW_KEY_PAGE_DOWN) {
+			if (switchToNextPage()) {
+				cir.setReturnValue(true);
+			}
 		}
 	}
 
