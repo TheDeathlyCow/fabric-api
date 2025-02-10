@@ -383,11 +383,7 @@ public final class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 				.addOptionalTag(ConventionalItemTags.HONEY_DRINKS)
 				.addOptionalTag(ConventionalItemTags.MAGIC_DRINKS)
 				.addOptionalTag(ConventionalItemTags.OMINOUS_MAGIC_DRINKS)
-				.addOptionalTag(ConventionalItemTags.JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.APPLE_JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.BEETROOT_JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.CARROT_JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.MELON_JUICE_DRINKS);
+				.addOptionalTag(ConventionalItemTags.JUICE_DRINKS);
 
 		getOrCreateTagBuilder(ConventionalItemTags.WATER_DRINKS);
 
@@ -408,19 +404,7 @@ public final class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 		getOrCreateTagBuilder(ConventionalItemTags.OMINOUS_MAGIC_DRINKS)
 				.add(Items.OMINOUS_BOTTLE);
 
-		getOrCreateTagBuilder(ConventionalItemTags.JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.APPLE_JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.BEETROOT_JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.CARROT_JUICE_DRINKS)
-				.addOptionalTag(ConventionalItemTags.MELON_JUICE_DRINKS);
-
-		getOrCreateTagBuilder(ConventionalItemTags.APPLE_JUICE_DRINKS);
-
-		getOrCreateTagBuilder(ConventionalItemTags.BEETROOT_JUICE_DRINKS);
-
-		getOrCreateTagBuilder(ConventionalItemTags.CARROT_JUICE_DRINKS);
-
-		getOrCreateTagBuilder(ConventionalItemTags.MELON_JUICE_DRINKS);
+		getOrCreateTagBuilder(ConventionalItemTags.JUICE_DRINKS);
 
 		getOrCreateTagBuilder(ConventionalItemTags.DRINK_CONTAINING_BUCKET)
 				.add(Items.MILK_BUCKET);
