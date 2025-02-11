@@ -20,11 +20,17 @@ import java.util.List;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
+import org.spongepowered.asm.mixin.gen.Invoker;
 
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.LayeredDrawer;
+import net.minecraft.client.render.RenderTickCounter;
 
 @Mixin(LayeredDrawer.class)
 public interface LayeredDrawerAccessor {
 	@Accessor
 	List<LayeredDrawer.Layer> getLayers();
+
+	@Invoker("renderInternal")
+	void invokeRenderInternal(DrawContext context, RenderTickCounter tickCounter);
 }

@@ -22,6 +22,8 @@ import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.LayeredDrawer;
 import net.minecraft.client.render.RenderTickCounter;
 
+import net.fabricmc.fabric.mixin.client.rendering.LayeredDrawerAccessor;
+
 /**
  * A layer that wraps another layered drawer that can be added to {@link net.fabricmc.fabric.api.client.rendering.v1.LayeredDrawerWrapper LayeredDrawerWrapper}.
  *
@@ -30,11 +32,15 @@ import net.minecraft.client.render.RenderTickCounter;
  * @param delegate     the layered drawer to wrap
  * @param shouldRender a boolean supplier that determines if the layer should render
  */
-public record SubLayer(LayeredDrawer delegate, BooleanSupplier shouldRender) implements LayeredDrawer.Layer {
+public record SubLayer(LayeredDrawer delegate, BooleanSupplier shouldRender, LayeredDrawerAccessor layeredDrawerAccessor) implements LayeredDrawer.Layer {
+	public SubLayer(LayeredDrawer delegate, BooleanSupplier shouldRender) {
+		this(delegate, shouldRender, (LayeredDrawerAccessor) delegate);
+	}
+
 	@Override
 	public void render(DrawContext context, RenderTickCounter tickCounter) {
 		if (shouldRender.getAsBoolean()) {
-			delegate.render(context, tickCounter);
+			layeredDrawerAccessor.invokeRenderInternal(context, tickCounter);
 		}
 	}
 }
