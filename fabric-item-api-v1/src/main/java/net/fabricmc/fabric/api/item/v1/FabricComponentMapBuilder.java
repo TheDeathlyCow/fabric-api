@@ -73,7 +73,7 @@ public interface FabricComponentMapBuilder {
 	}
 
 	/**
-	 * Checks if a component type has been registered to this builder
+	 * Checks if a component type has been registered to this builder.
 	 *
 	 * @param type The component type to check
 	 * @return Returns true if the type has been registered to this builder, false otherwise
