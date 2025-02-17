@@ -2,7 +2,7 @@
   "values": [
     "minecraft:potion",
     {
-      "id": "#c:drinks/magic/ominous",
+      "id": "#c:drinks/ominous",
       "required": false
     }
   ]
